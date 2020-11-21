@@ -1,0 +1,13 @@
+<h1>My podcasts</h1>
+<p>Click link for Details</p>
+
+{{#each allThepodcasts}}
+        <p>{{this.title}}</p>
+         <a href="/podcasts/{{this._id}}">Find Out More About {{this.title}}!</a>
+         <form action="/podcasts/{{this._id}}/delete" method="post">
+
+  <button class="delete-button" type="delete">Delete</button>
+  
+</form> 
+
+{{/each}}
