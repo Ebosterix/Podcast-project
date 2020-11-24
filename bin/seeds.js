@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const host = require('../models/host.model');
 const podcast = require('../models/podcast.model');
 
-const DB_NAME = "starter-code";
+const DB_NAME = "db-podcast";
 
 mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
   useCreateIndex: true,
@@ -23,22 +23,19 @@ const hosts = [
 ];
 
 const podcasts = [
-  {
-    title: 'Catch me if you can', genre: 'Drama',
-    plot: 'Tom Hanks podcast', hosts: ["Tom Hanks"]
-  },
+  
 
   {
-    title: 'One Day', genre: 'Drama',
-    plot: 'Anne Hathaway podcast', hosts: ["Anne Hathaway"]
+    kind: "podcast",
+    artistName: "TED", 
+    primaryGenreName: "Kids & Family",
+    collectionName: "TED Talks Kids and Family",
+    contentAdvisoryRating: "Clean",
+    artworkUrl600: "https://is4-ssl.mzstatic.com/image/thumb/Podcasts123/v4/aa/4a/2c/aa4a2caf-3b51-f3bb-bdf9-65df0f67182b/mza_6762613447712870330.png/600x600bb.jpg",
+    
   },
 
-  {
-    title: 'Borat', genre: 'Comedy',
-    plot: 'Borat podcast', hosts: ["Borat"]
-  },
-
-
+  
   {
     title: 'Power', genre: 'Suspense, Drama',
     plot: 'A Courtney A. Kemp podcast', hosts: ["James "Ghost" St. Patrick"]

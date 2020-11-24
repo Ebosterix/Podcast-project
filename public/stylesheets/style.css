@@ -1,8 +1,37 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  padding: 100px;
 
-a {
-  color: #00B7FF; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(3, 4, 80);
+}
 
-/*# sourceMappingURL=style.css.map */
+
+ .landingPage {
+  background-image: url("../images/iTunesPodcastbgimg.png");
+  background-repeat: no-repeat;
+  height:500px;
+  width:100%;
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 3%
+   
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ .button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+
+}
+
+.button {
+  background-color: #008CBA;
+}
